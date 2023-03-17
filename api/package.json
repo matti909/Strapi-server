@@ -1,0 +1,38 @@
+{
+  "name": "api-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "db:start": "docker-compose -f docker-compose-dev.yml up -d",
+    "db:stop": "docker compose -f docker-compose-dev.yml down",
+    "db:logs": "docker logs -f strapi_api"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.6.2",
+    "@strapi/plugin-users-permissions": "4.6.2",
+    "@strapi/provider-email-mailgun": "^4.7.1",
+    "@strapi/provider-upload-aws-s3": "^4.7.1",
+    "@strapi/strapi": "4.6.2",
+    "better-sqlite3": "8.0.1",
+    "lodash.set": "^4.3.2",
+    "pg": "^8.10.0",
+    "pg-connection-string": "^2.5.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "48136487-e2b8-46d3-83aa-1074e8eb1022"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
