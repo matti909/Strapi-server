@@ -1,0 +1,16 @@
+version: '2.5'
+
+services:
+ database:
+    container_name: strapi_api
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: strapi1
+      POSTGRES_USER: strapi1
+      POSTGRES_PASSWORD: password
+    volumes:
+      - strapi_db:/var/lib/postgresql/data
+volumes:
+  strapi_db: {}
