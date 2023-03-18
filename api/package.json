@@ -7,10 +7,7 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi",
-    "db:start": "docker-compose -f docker-compose-dev.yml up -d",
-    "db:stop": "docker compose -f docker-compose-dev.yml down",
-    "db:logs": "docker logs -f strapi_api"
+    "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
